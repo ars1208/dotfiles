@@ -1,6 +1,3 @@
-# プロンプトの色設定
-PROMPT='%F{green}%n@%m:%f %F{yellow}%~$%f '
-
 # コマンド履歴の設定
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -51,4 +48,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# starship
+eval "$(starship init zsh)"
 
