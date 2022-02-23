@@ -1,8 +1,17 @@
 add_newline = true
 
 [directory]
-truncation_length = 100
+truncation_length = 5
 truncate_to_repo = false
 
 [package]
 disabled = true
+
+[python]
+symbol = "👾 "
+
+[conda]
+format = "[$symbol$environment](dimmed green) "
+
+[container]
+format = "[$symbol \\[$name\\]]($style) "
