@@ -29,6 +29,23 @@ alias his='history | grep'
 alias grep='grep --color=auto'
 alias cat='bat --theme Visual Studio Dark+'
 
+# zplug
+source ~/.zplug/init.zsh
+
+## シンタックスハイライト
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "chrissicool/zsh-256color"
+
+## 未インストールのプラグインをインストール
+if ! zplug check --verbose; then
+    printf 'Install? [y/N]: '
+    if read -q; then
+      echo; zplug install
+    fi
+fi
+# コマンドにパスを通し、プラグインを読み込む
+zplug load --verbose
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
