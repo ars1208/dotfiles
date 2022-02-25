@@ -2,6 +2,8 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+
+setopt inc_append_history
 setopt share_history
 setopt hist_ignore_all_dups
 setopt auto_pushd
@@ -28,6 +30,7 @@ fi
 alias his='history | grep'
 alias grep='grep --color=auto'
 alias cat='bat --theme Visual Studio Dark+'
+alias reload='source ~/dotfiles/.zshrc'
 
 # syntax highlight
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
