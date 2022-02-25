@@ -31,6 +31,8 @@ alias cat='bat --theme Visual Studio Dark+'
 
 # syntax highlight
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# auto suggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
