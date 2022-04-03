@@ -14,11 +14,11 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 let skip_defaults_vim=1
 :syntax enable
 
-" 文字コードをUtFに変換
-set fenc=utf-8
-
-" 行番号の表示
-set number
+set fenc=utf-8 " 文字コードをUtFに変換
+set number " 行番号を表示
+set ignorecase " 検索において大文字と小文字の違いを無視
+set smartcase " 大文字含む文字列で検索した場合、ignorecaseを上書き
+set incsearch " インクリメンタルサーチ
 
 " 現在の行を強調
 set cursorline
