@@ -12,6 +12,7 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
+:syntax enable
 
 " 文字コードをUtFに変換
 set fenc=utf-8
@@ -21,3 +22,13 @@ set number
 
 " 現在の行を強調
 set cursorline
+
+" エラーメッセージの表示時にピープを鳴らさない
+set noerrorbells
+
+" ステータス行を常に表示
+set laststatus=2
+
+" 改行した時に同じレベルのインデントにしてくれる
+set autoindent
+
