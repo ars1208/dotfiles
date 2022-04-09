@@ -19,6 +19,7 @@ set number " 行番号を表示
 set ignorecase " 検索において大文字と小文字の違いを無視
 set smartcase " 大文字含む文字列で検索した場合、ignorecaseを上書き
 set incsearch " インクリメンタルサーチ
+set hlsearch " 検索結果をハイライト表示
 set cursorline " 現在の行を強調
 set noerrorbells " エラーメッセージの表示時にピープを鳴らさない
 set laststatus=2 " ステータス行を常に表示
