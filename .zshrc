@@ -29,7 +29,7 @@ fi
 
 alias his='history | grep'
 alias grep='grep --color=auto'
-alias cat='bat --theme Visual Studio Dark+'
+alias cat='bat --theme="Visual Studio Dark+"'
 alias reload='source ~/dotfiles/.zshrc'
 
 # syntax highlight
