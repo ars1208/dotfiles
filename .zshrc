@@ -1,3 +1,6 @@
+# 文字コードの指定
+export LANG=ja_JP.UTF-8
+
 # コマンド履歴の設定
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -8,6 +11,7 @@ setopt share_history
 setopt hist_ignore_all_dups
 setopt auto_pushd
 setopt pushd_ignore_dups
+setopt print_eight_bit
 
 # zsh-completions(補完機能)の設定
 if [ -e /usr/local/share/zsh-completions ]; then
