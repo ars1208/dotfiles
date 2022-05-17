@@ -20,7 +20,7 @@ fi
 autoload -U compinit
 compinit -uh
 
-# alias
+# aliasの設定
 if [[ $(command -v exa) ]]; then
     alias ls='exa'
     alias ll='exa -la'
