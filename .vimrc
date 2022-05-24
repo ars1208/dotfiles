@@ -15,6 +15,7 @@ let skip_defaults_vim=1
 
 set fenc=utf-8 # 文字コードをUtFに変換
 set laststatus=2 # ステータス行を常に表示
+set backspace=indent,eol,start
 set number # 行番号を表示
 set ignorecase # 検索において大文字と小文字の違いを無視
 set smartcase # 大文字含む文字列で検索した場合、ignorecaseを上書き
