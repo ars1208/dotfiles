@@ -23,4 +23,5 @@ set incsearch # インクリメンタルサーチ
 set hlsearch # 検索結果をハイライト表示
 set cursorline # 現在の行を強調
 set noerrorbells # エラーメッセージの表示時にピープを鳴らさない
+set noswapfile
 set autoindent # 改行した時に同じレベルのインデントにしてくれる
