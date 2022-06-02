@@ -26,3 +26,4 @@ set noerrorbells # エラーメッセージの表示時にピープを鳴らさ�
 set noswapfile
 set autoindent # 改行した時に同じレベルのインデントにしてくれる
 set expandtab
+set list
