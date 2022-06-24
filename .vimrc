@@ -27,3 +27,4 @@ set noswapfile
 set autoindent # 改行した時に同じレベルのインデントにしてくれる
 set expandtab
 set list
+set wildmenu
