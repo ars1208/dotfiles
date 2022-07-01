@@ -25,7 +25,7 @@ set smartcase # 大文字含む文字列で検索した場合、ignorecaseを上
 set incsearch # インクリメンタルサーチ
 set hlsearch # 検索結果をハイライト表示
 set noerrorbells # エラーメッセージの表示時にピープを鳴らさない
-set noswapfile
-set expandtab
-set list
+set noswapfile # swapファイルを作らない
+set expandtab # タブ文字を半角スペースにする
+set list # 
 set wildmenu
