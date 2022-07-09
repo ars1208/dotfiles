@@ -28,4 +28,4 @@ set noerrorbells # エラーメッセージの表示時にピープを鳴らさ�
 set noswapfile # swapファイルを作らない
 set expandtab # タブ文字を半角スペースにする
 set list # 
-set wildmenu
+set wildmenu # tabキーによるファイル名補完
