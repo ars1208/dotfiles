@@ -15,3 +15,7 @@ format = "[$symbol$environment](dimmed green) "
 
 [container]
 format = "[$symbol \\[$name\\]]($style) "
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
