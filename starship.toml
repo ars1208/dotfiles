@@ -1,21 +1,38 @@
 add_newline = true
 
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
 [directory]
+read_only = " "
 truncation_length = 5
 truncate_to_repo = false
+truncation_symbol = "…/"
 
 [package]
 disabled = true
 
 [python]
-symbol = "👾 "
+symbol = " "
+
+[git_branch]
+symbol = " "
 
 [conda]
 format = "[$symbol$environment](dimmed green) "
 
 [container]
-format = "[$symbol \\[$name\\]]($style) "
+symbol = " "
+format = "[$symbol\\[$name\\]]($style) "
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context](blue bold)"
+
+[nodejs]
+symbol = " "
+format = "via [$symbol$version](bold green) "
 
 [aws]
-format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = "bold blue"
+disabled = true
