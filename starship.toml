@@ -54,3 +54,6 @@ format = "via [$symbol$version](bold green) "
 
 [aws]
 disabled = true
+
+[gcloud]
+disabled = true
