@@ -6,6 +6,7 @@ return {
   ----------------- fonts
   font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
   font_size = 14.0,
+  line_height = 1.1,
   ----------------- window
   color_scheme = 'Afterglow',
 }
