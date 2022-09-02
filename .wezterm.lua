@@ -8,5 +8,5 @@ return {
   font_size = 14.0,
   line_height = 1.1,
   ----------------- window
-  color_scheme = 'Afterglow',
+  color_scheme = "nord",
 }
