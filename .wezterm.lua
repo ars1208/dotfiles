@@ -11,6 +11,7 @@ return {
   font_size = 18.0,
   line_height = 1.1,
   adjust_window_size_when_changing_font_size = false,
+  enable_scroll_bar = true,
   ----------------- window
   color_scheme = "nord",
   scrollback_lines = 20000,
