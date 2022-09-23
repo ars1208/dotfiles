@@ -35,6 +35,7 @@ alias his='history | grep'
 alias grep='grep --color=auto'
 alias cat='bat --theme="Visual Studio Dark+"'
 alias reload='source ~/dotfiles/.zshrc'
+alias mkdir='mkdir -p'
 
 # syntax highlight
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
