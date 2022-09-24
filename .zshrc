@@ -31,6 +31,9 @@ else
     alias lt='tree -I "node_modules|.git|.cache"'
 fi
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias his='history | grep'
 alias grep='grep --color=auto'
 alias cat='bat --theme="Visual Studio Dark+"'
