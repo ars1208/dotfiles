@@ -68,3 +68,15 @@ unset __conda_setup
 # starship
 eval "$(starship init zsh)"
 
+# krew
+export PATH=$PATH:$HOME/.krew/bin
+
+# progate
+export PATH=$HOME/.progate/bin:$PATH
+
+# Terraform
+export PATH=$PATH:$HOME/.tfenv/bin
+
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
