@@ -79,4 +79,4 @@ export PATH=$PATH:$HOME/.tfenv/bin
 
 # Go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
