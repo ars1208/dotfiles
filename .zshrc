@@ -64,3 +64,6 @@ unset __conda_setup
 # starship
 eval "$(starship init zsh)"
 
+# GO path
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
