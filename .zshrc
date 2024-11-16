@@ -31,10 +31,14 @@ else
     alias lt='tree -I "node_modules|.git|.cache"'
 fi
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias his='history | grep'
 alias grep='grep --color=auto'
 alias cat='bat --theme="Visual Studio Dark+"'
 alias reload='source ~/dotfiles/.zshrc'
+alias mkdir='mkdir -p'
 
 # syntax highlight
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -64,6 +68,15 @@ unset __conda_setup
 # starship
 eval "$(starship init zsh)"
 
-# GO path
+# krew
+export PATH=$PATH:$HOME/.krew/bin
+
+# progate
+export PATH=$HOME/.progate/bin:$PATH
+
+# Terraform
+export PATH=$PATH:$HOME/.tfenv/bin
+
+# Go
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin
