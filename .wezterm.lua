@@ -5,6 +5,10 @@ wezterm.on('update-right-status', function(window, pane)
   -- Each element holds the text for a cell in a "powerline" style << fade
   local cells = {}
 
+  -- cwd: current work directory
+  -- hostname: hostname of PC
+  -- date: today's date
+
   -- Figure out the cwd and host of the current pane.
   -- This will pick up the hostname for the remote host if your
   -- shell is using OSC 7 on the remote host.
@@ -51,12 +55,9 @@ wezterm.on('update-right-status', function(window, pane)
   table.insert(cells, date)
 
   -- An entry for each battery (typically 0 or 1 battery)
+  -- TODO: デスクトップだとnan%になってしまうため要修正
   for _, b in ipairs(wezterm.battery_info()) do
-    if b.state_of_charge == 'nan' then
-      table.insert(cells, string.format('%.0f%%', 100))
-    else
-      table.insert(cells, string.format('%.0f%%', b.state_of_charge * 100))
-    end
+    table.insert(cells, string.format('🔋%.0f%%', b.state_of_charge * 100))
   end
 
   -- The powerline < symbol
