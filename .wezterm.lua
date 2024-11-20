@@ -51,7 +51,7 @@ wezterm.on('update-right-status', function(window, pane)
   end
 
   -- I like my date/time in this style: "Wed Mar 3 08:14"
-  local date = wezterm.strftime '%a %b %-d %H:%M'
+  local date = wezterm.strftime '📅 %a %b %-d %H:%M'
   table.insert(cells, date)
 
   -- An entry for each battery (typically 0 or 1 battery)
@@ -61,6 +61,7 @@ wezterm.on('update-right-status', function(window, pane)
   end
 
   -- The powerline < symbol
+  -- TODO: 左端を矢印にできないか調査
   local LEFT_ARROW = utf8.char(0xe0b3)
   -- The filled in variant of the < symbol
   local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
