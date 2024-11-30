@@ -104,6 +104,24 @@ wezterm.on('update-right-status', function(window, pane)
   window:set_right_status(wezterm.format(elements))
 end)
 
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+  local background = "#555555"
+  local foreground = "#FFFFFF"
+  
+  if tab.is_active then
+    background = "#ae8b2d"
+    foreground = "#FFFFFF"
+  end
+
+  local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
+
+  return {
+    { Background = { Color = background } },
+    { Foreground = { Color = foreground } },
+    { Text = title },
+  }
+end)
+
 
 -- Hold the configuration
 local config = {}
