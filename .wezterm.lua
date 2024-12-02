@@ -186,4 +186,8 @@ config.window_background_opacity = 0.8
 config.macos_window_background_blur = 20
 config.window_decorations = "RESIZE"
 
+-- TODO: キーバインディングの設定
+-- TODO: - ペイン分割
+-- TODO: - タブ分割
+
 return config
