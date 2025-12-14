@@ -39,6 +39,7 @@ alias grep='grep --color=auto'
 alias cat='bat --theme="Visual Studio Dark+"'
 alias reload='source ~/dotfiles/.zshrc'
 alias mkdir='mkdir -p'
+alias kc='kubectl'
 
 # syntax highlight
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -80,3 +81,6 @@ export PATH=$PATH:$HOME/.tfenv/bin
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
