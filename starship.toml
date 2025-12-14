@@ -48,6 +48,10 @@ format = "[$symbol\\[$name\\]]($style) "
 symbol = " "
 format = "via [$symbol$context](blue bold)"
 
+[kubernetes]
+symbol = "☸ "
+format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed green) '
+
 [nodejs]
 symbol = " "
 format = "via [$symbol$version](bold green) "
